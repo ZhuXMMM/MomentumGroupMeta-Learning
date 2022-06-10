@@ -2,7 +2,7 @@
 
 The goal of Few-Shot Image Classification (FSIC) is to quickly learn new classes of features from few images. At present, image classification covers more and more fields, and it is often difficult to obtain enough data for learning in some specific scenarios, such as medical fields, personalized customization of robots, etc. The meta-learning method has become the mainstream method for FSIC due to its good performance. However, it still has the problems of poor generalization ability and easy to be disturbed by low-quality images. In order to solve the above problems, this paper proposes Group Meta-Learning (GML) and Adaptive Momentum Smoothing (AMS) methods. GML obtains an ensemble model by grouping and training multiple episodes in parallel, which can reduce the interference of low-quality samples and improve the stability of meta-learning training. AMS includes the adaptive momentum update rule, which optimizes the further integration of integrated models between different groups, so that the model can memorize experience in more scenarios and enhance the generalization ability of the model. The combination of the above two methods can achieve a better effect of Few-Shot Learning (FSL), which is recorded as Momentum Group Meta-Learning (MGML). We conduct experiments on miniImageNet, tieredImageNet and CIFAR-FS datasets. The results show that MGML improves the accuracy, stability and cross-domain transfer ability of FSIC, and can be applied to different FSL models.
 
-![main_pic_2](/Users/xiaomengzhu/Desktop/fewshot_project/main_pic_2.png)
+![main_pic_2](./main_pic_2.png)
 
 
 
