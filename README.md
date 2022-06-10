@@ -47,15 +47,15 @@ Please download [miniImagenet](https://drive.google.com/file/d/1fJAK5WZTjerW7EWH
 
 ｜—— cifar-fs
 
-​		⎣—— （Place extracted files）
+​   		⎣—— （Place extracted files）
 
 ｜—— mini-imagenet
 
-​		⎣—— （Place extracted files）
+​	   	⎣—— （Place extracted files）
 
 ⎣—— tiered-imagenet
 
-​        ⎣—— （Place extracted files）
+​     ⎣—— （Place extracted files）
 
 ### Running code
 
