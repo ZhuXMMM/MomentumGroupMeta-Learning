@@ -9,7 +9,7 @@ model: meta-baseline
 model_args: 
     encoder: resnet12
     encoder_args: {}
-load_encoder: ./save_lw/classifier_mini-imagenet_resnet12/epoch-last.pth
+load_encoder: ./save/mini-imagenet-pretrain.pth
 n_way: 5
 n_shot: 1
 n_query: 15
