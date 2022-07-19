@@ -41,7 +41,7 @@ python = 3.9
 
 ### Dataset
 
-Please download [miniImagenet](https://drive.google.com/file/d/1fJAK5WZTjerW7EWHHQAR9pRJVNg1T1Y7/view),   [tieredImagenet](https://drive.google.com/file/d/1nVGCTd9ttULRXFezh4xILQ9lUkg0WZCG/view) and [CIFARFS](https://drive.google.com/file/d/1GjGMI0q3bgcpcB_CjI40fX54WgLPuTpS/view) datasets respectively and put them in the materials folder. The directory of the materials folder added to the dataset should be as follows：
+Please download [miniImagenet](https://drive.google.com/file/d/1fJAK5WZTjerW7EWHHQAR9pRJVNg1T1Y7/view),   [tieredImagenet](https://drive.google.com/file/d/1nVGCTd9ttULRXFezh4xILQ9lUkg0WZCG/view) and [CIFARFS](https://drive.google.com/file/d/1GjGMI0q3bgcpcB_CjI40fX54WgLPuTpS/view) datasets respectively and put them in the materials folder （You need to create a folder called \textit{materials}）. The directory of the materials folder added to the dataset should be as follows：
 
 ./materials
 
@@ -59,17 +59,17 @@ Please download [miniImagenet](https://drive.google.com/file/d/1fJAK5WZTjerW7EWH
 
 ### Running code
 
-The experiment is divided into pre-training stage, meta-learning stage and testing stage. You can choose to train on the designated GPU(e.g. `gpu 0,1` ).  During the training, the training log is placed in the log folder, and the saved model parameters are in the save folder.
+The experiment is divided into pre-training stage, meta-learning stage and testing stage. You can choose to train on the designated GPU(e.g. `gpu 0,1` ).  You need to create a folder called \textit{save} and \textit{log}. During the training, the training log is placed in the log folder, and the saved model parameters are in the save folder.
 
 #### 1. Pre-training stage
 
-We train 100 epochs with 128 batch size on miniImageNet and CIFAR-FS, and learning rate decays at epoch 90. On tieredImagNet, we train 120 epochs with 512 batch size, and the learning rate decays at epoch 40 and 80. You can run the code as follows：
+We train 100 epochs with 128 batch size on miniImageNet, and learning rate decays at epoch 90. On tieredImagNet, we train 120 epochs with 512 batch size, and the learning rate decays at epoch 40 and 80. You can run the code as follows：
 
 ```shell
 python train_classifier.py --config configs/train_classifier_[dataset].yaml --gpu 0,1
 ```
 
-[dataset] can be mini, tiered and cifars.
+[dataset] can be mini and tiered. You can download the pre-trained model from this [link](https://drive.google.com/drive/folders/1DnsEGlOBGSiD0rz2qHDgNVODQV6WkQEi?usp=sharing)
 
 #### 2. Meta-learning stage
 
