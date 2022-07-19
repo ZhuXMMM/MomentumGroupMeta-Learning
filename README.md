@@ -69,7 +69,7 @@ We train 100 epochs with 128 batch size on miniImageNet, and learning rate decay
 python train_classifier.py --config configs/train_classifier_[dataset].yaml --gpu 0,1
 ```
 
-[dataset] can be mini and tiered. You can download the pre-trained model from this [link](https://drive.google.com/drive/folders/1DnsEGlOBGSiD0rz2qHDgNVODQV6WkQEi?usp=sharing)
+[dataset] can be mini and tiered. You can download the pre-trained model from this [link](https://drive.google.com/drive/folders/1DnsEGlOBGSiD0rz2qHDgNVODQV6WkQEi?usp=sharing).
 
 #### 2. Meta-learning stage
 
