@@ -1,0 +1,14 @@
+# tiered-imagenet cifar-fs fc100
+dataset:  mini-imagenet
+dataset_args: {split: test}
+train_dataset:  mini-imagenet
+n_shot: 1
+model: meta-baseline
+model_args: 
+    encoder: resnet12
+    encoder_args: {}
+
+load_encoder: ./save_lw/meta_mini-imagenet-5shot_meta-baseline-resnet12/batch_size/_batch_size_4user_num_5/max-va.pth
+# Replace load with load_encoder for loading the encoder only (e.g. for testing Classifier-Baseline)
+optimizer: sgd
+optimizer_args: {lr: 0.001, weight_decay: 5.e-4}
