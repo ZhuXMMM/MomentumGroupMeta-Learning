@@ -9,7 +9,7 @@ model: meta-baseline
 model_args: 
     encoder: resnet12
     encoder_args: {}
-load_encoder: ./save_lw/classifier_tiered-imagenet_resnet12/tiered-resnet12.pth
+load_encoder: ./save/tiered-imagenet-pretrain.pth
 
 n_way: 5
 n_shot: 1
