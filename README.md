@@ -73,10 +73,10 @@ python train_classifier.py --config configs/train_classifier_[dataset].yaml --gp
 
 #### 2. Meta-learning stage
 
-When training the baseline, the batch size is set to 4 in 1-shot and 5-shot. When training MGML, the number of meta-learning groups is set to 5. Unlike the baseline, the batch size of Mini-ImageNet and CIFAR-FS is set to 1 under the 1-shot setting, and remains the same under other settings. To shorten the training time, you can set $B_{upper}$ to a smaller value.We set $B_{upper}= 1$ on two datasets. To train baseline, you can run the code as follows：
+When training the baseline, the batch size is set to 4 in 1-shot and 5-shot. When training MGML, the number of meta-learning groups is set to 5. Unlike the baseline, the batch size of Mini-ImageNet and CIFAR-FS is set to 1 under the 1-shot setting, and remains the same under other settings. To shorten the training time, you can set $B_{upper}$ (upper in code) to a smaller value. We set $B_{upper}= 1$ on two datasets. To train baseline, you can run the code as follows：
 
 ```shell
-python train_meta_MGML --batch_size 4 --group_nums 1 --momentum 0.0 --config configs/train_meta_[dataset].yaml
+python train_meta_MGML --batch_size 4 --task_nums 1 --momentum 1.0 --upper 1.0 --config configs/train_meta_[dataset].yaml
 ```
 
 You can change N-way K-shot setting in the yaml files. [dataset] can be mini, tiered and cifars. If you want to train MGML you can change the three parameters batch_size, group_nums and momentum (change it to 1.0). 
