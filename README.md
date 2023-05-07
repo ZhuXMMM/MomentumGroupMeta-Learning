@@ -42,20 +42,20 @@ python = 3.9
 ### Dataset
 
 Please download [miniImagenet](https://drive.google.com/file/d/1fJAK5WZTjerW7EWHHQAR9pRJVNg1T1Y7/view),   [tieredImagenet](https://drive.google.com/file/d/1nVGCTd9ttULRXFezh4xILQ9lUkg0WZCG/view) and [CIFARFS](https://drive.google.com/file/d/1GjGMI0q3bgcpcB_CjI40fX54WgLPuTpS/view) datasets respectively and put them in the materials folder （You need to create a folder called \textit{materials}）. The directory of the materials folder added to the dataset should be as follows：
-
-|——./materials
+```
+|—— materials
 
              ｜—— cifar-fs
 
-​ ​ ​                   		|—— （Place extracted files）
+                   		|—— （Place extracted files）
 
              ｜—— mini-imagenet
 
-​ ​ ​ 	                   |—— （Place extracted files）
+	                    |—— （Place extracted files）
              |—— tiered-imagenet
 
-​ ​ ​                     |—— （Place extracted files）
-
+                     |—— （Place extracted files）
+```
 ### Running code
 
 The experiment is divided into pre-training stage, meta-learning stage and testing stage. You can choose to train on the designated GPU(e.g. `gpu 0,1` ).  You need to create a folder called \textit{save} and \textit{log}. During the training, the training log is placed in the log folder, and the saved model parameters are in the save folder.
