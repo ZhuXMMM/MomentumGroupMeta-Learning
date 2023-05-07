@@ -43,19 +43,18 @@ python = 3.9
 
 Please download [miniImagenet](https://drive.google.com/file/d/1fJAK5WZTjerW7EWHHQAR9pRJVNg1T1Y7/view),   [tieredImagenet](https://drive.google.com/file/d/1nVGCTd9ttULRXFezh4xILQ9lUkg0WZCG/view) and [CIFARFS](https://drive.google.com/file/d/1GjGMI0q3bgcpcB_CjI40fX54WgLPuTpS/view) datasets respectively and put them in the materials folder （You need to create a folder called \textit{materials}）. The directory of the materials folder added to the dataset should be as follows：
 
-./materials
+|——./materials
 
-｜—— cifar-fs
+             ｜—— cifar-fs
 
-​ ​ ​   		⎣—— （Place extracted files）
+​ ​ ​                   		|—— （Place extracted files）
 
-｜—— mini-imagenet
+             ｜—— mini-imagenet
 
-​ ​ ​ 	   	⎣—— （Place extracted files）
+​ ​ ​ 	                   |—— （Place extracted files）
+             |—— tiered-imagenet
 
-⎣—— tiered-imagenet
-
-​ ​ ​     ⎣—— （Place extracted files）
+​ ​ ​                     |—— （Place extracted files）
 
 ### Running code
 
@@ -89,3 +88,16 @@ To test the performance, change the setting `load_encoder` in `configs/test_few_
 python python test_few_shot.py --shot 1
 ```
 
+### Citing our article
+If you would like to cite our article, please use the following BibTeX entry.
+```
+@article{zhu2022mgml,
+  title={MGML: Momentum group meta-learning for few-shot image classification},
+  author={Zhu, Xiaomeng and Li, Shuxiao},
+  journal={Neurocomputing},
+  volume={514},
+  pages={351--361},
+  year={2022},
+  publisher={Elsevier}
+}
+```
