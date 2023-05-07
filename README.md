@@ -88,7 +88,7 @@ To test the performance, change the setting `load_encoder` in `configs/test_few_
 python python test_few_shot.py --shot 1
 ```
 
-### Citing our article
+## Citing our article
 If you would like to cite our article, please use the following BibTeX entry.
 ```
 @article{zhu2022mgml,
